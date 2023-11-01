@@ -1,19 +1,19 @@
 *{
-	margin: 0;
-	padding: 0;
+	margin: 0;    /* is used to create space around elements*/
+	padding: 0;   /* is the space between content and its border keeping it a set distance between other elements*/
 }
 .header {
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);  /* url shows what image to use rgba(red,green,blue,alpha(opacity))*/
 	background-position: center;
-	background-size: cover;
-	position: relative;
+	background-size: cover;  /* means it will always fit the whole divison*/
+	position: relative;  /* make sure element stays position*/
 }
 nav{
-	   display: flex;
+	   display: flex;   /* flexwrap property means elements will go to the next line if there is not enough space*/
 	   padding: 2% 6%;
-	   justify-content: space-between;
+	   justify-content: space-between;   /*how browser distributes spacebetween all aviable space is used between first and last items*/
 	   align-items: center;
 }
 nav img{
@@ -25,11 +25,12 @@ nav img{
 }
 .nav-links ul li{
 	list-style: none;
-	display: inline-block;
+	display: inline-block;  /* allows to set a width and height*/
 	padding: 8px 12px;
-position: relative;
++position: relative+;
 }
-
+.nav-links ul li a{
+	color:#fff;
 
 
 
