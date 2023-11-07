@@ -18,7 +18,8 @@ nav{
 	   align-items: center;
 }
 nav img{
-	width:150px;
+	width:100px;
+	height:75px;
 }
 .nav-links{
 	flex: 1;
@@ -47,7 +48,16 @@ nav img{
 .nav-links ul li:hover::after{                                                                     /* so when you hover over nav options it underlines  */
 	width: 100%;                                                                                   /* changes width from 0 in line 40 to 100*/
 }
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 
+}
 
 
 
