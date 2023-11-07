@@ -1,0 +1,68 @@
+* {
+	margin: 0;                                                                                    /* is used to create space around elements*/
+	padding: 0;                                                                                   /* is the space between content and its border keeping it a set distance between other elements*/
+	font-family: 'Poppins', sans-serif;                                                           /* add fonts*/
+}
+.header {
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);  /* url shows what image to use rgba(red,green,blue,alpha(opacity))*/
+	background-position: center;
+	background-size: cover;                                                                       /* means it will always fit the whole divison*/
+	position: relative;                                                                           /* make sure element stays position*/
+}
+nav{
+	   display: flex;                                                                             /* flexwrap property means elements will go to the next line if there is not enough space*/
+	   padding: 2% 6%;
+	   justify-content: space-between;                                                            /*how browser distributes spacebetween all aviable space is used between first and last items*/
+	   align-items: center;
+}
+nav img{
+	width:100px;
+	height:75px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;                                                                        /* allows to set a width and height*/
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+		color: #fff;
+		text-decoration:none;
+		font-size: 13px;
+}
+.nav-links ul li::after{                                                                        /* underlines the navigation options*/
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;                                                                              /* how long it takes for underline to appear*/
+}
+.nav-links ul li:hover::after{                                                                     /* so when you hover over nav options it underlines  */
+	width: 100%;                                                                                   /* changes width from 0 in line 40 to 100*/
+}
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 62px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 14px;
+	color: #fff;
+}
+
