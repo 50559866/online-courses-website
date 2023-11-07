@@ -35,15 +35,18 @@ nav img{
 		text-decoration:none;
 		font-size: 13px;
 }
-.nav-links ul li a::after{                                                                         /* underlines the navigation options*/
+.nav-links ul li::after{                                                                        /* underlines the navigation options*/
 	content: '';
-	width: 100%:;
+	width: 0%;
 	height: 2px;
 	background: #f44336;
 	display: block;
 	margin: auto;
+	transition: 0.5s;                                                                              /* how long it takes for underline to appear*/
 }
-
+.nav-links ul li:hover::after{                                                                     /* so when you hover over nav options it underlines  */
+	width: 100%;                                                                                   /* changes width from 0 in line 40 to 100*/
+}
 
 
 
