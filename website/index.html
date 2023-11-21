@@ -9,31 +9,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>                                                                                         <! --in css-->
     <section class="header">
         <! --starting a class-->
-        <nav>                                                                                  <! --section thats purpose is to provide navigation links-->
-            <a href="index.html"><img src="images/logo.png" /></a>                             <! --a means anchor sugests a hyperlink between pages and href indicates destination of hyperlink-->
-            <div class="nav-links">                                                            <! --div is a division tag that lets you group similar sets of content together on a web page-->
-                <ul>                                                                           <! --unordered list of items-->
-                    <li><a href="">HOME</a></li>                                               <! --li is a list item HOME shows name of hyperlink-->
+        <nav>                                                                                  <!--section thats purpose is to provide navigation links-->
+            <a href="index.html"><img src="images/logo.png" /></a>                             <!--a means anchor sugests a hyperlink between pages and href indicates destination of hyperlink-->
+            <div class="nav-links">                                                            <!--div is a division tag that lets you group similar sets of content together on a web page-->
+                <i class="fa fa-times" onclick="hideMenu()"></i>                                
+                <ul>                                                                           <!--unordered list of items-->
+                    <li><a href="">HOME</a></li>                                               <!--li is a list item HOME shows name of hyperlink-->
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">COURSE</a></li>
                     <li><a href="">BLOG</a></li>
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 <div class="text-box">
     <h1>World's Biggest Online College</h1>
     <p>Making websites is now one of the eaistest thing in the world. You just need to learn HTML, CSS, Javascript and you are good to go.</p>
-    <a href="">Visit Us To Know More</a>
+    <a href="" class="hero-btn">Visit Us To Know More</a>
 
 </div>
 
-
     </section>
+<!-- course-->
+
+<section class = "course">
+    <h1>Courses we offer</h1>
+    <p>Discover a world of innovation and expertise with our diverse range of tech courses.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>intermediate</h3>
+            <p> Dive into hands-on workshops, explore the latest trends in cybersecurity, web development, data science, and more. Led by industry experts, our courses blend theory with practical applications, ensuring you're equipped to thrive in the dynamic tech landscape. Join us on a journey of learning and discovery, where your passion meets the power of technology.</p>
+        </div>
+    </div>
+    <div class="course-col">
+        <h3>Degree</h3>
+        <p> Dive into hands-on workshops, explore the latest trends in cybersecurity, web development, data science, and more. Led by industry experts, our courses blend theory with practical applications, ensuring you're equipped to thrive in the dynamic tech landscape. Join us on a journey of learning and discovery, where your passion meets the power of technology.</p>
+    </div>
+    <div class="course-col">
+        <h3>Post Graduataion</h3>
+        <p> Dive into hands-on workshops, explore the latest trends in cybersecurity, web development, data science, and more. Led by industry experts, our courses blend theory with practical applications, ensuring you're equipped to thrive in the dynamic tech landscape. Join us on a journey of learning and discovery, where your passion meets the power of technology.</p>
+    </div>
+</section>
+
+
+
+
+
+<!-- Javascript ofr toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
 
 </body>
 </html>
