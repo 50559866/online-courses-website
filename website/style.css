@@ -46,8 +46,6 @@
 }
 
 
-
-
 nav{
 	   display: flex;                                                                             /* flexwrap property means elements will go to the next line if there is not enough space*/
 	   padding: 2% 6%;
@@ -201,3 +199,39 @@ h3{
 		flex-direction: column;
 	}
 }
+.text-box1{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.text-box1 h1{
+	font-size: 62px;
+}
+.text-box1 p{
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: #fff;
+	padding: 5px;
+}
+.text-box1 p2:hover{
+	cursor: pointer;
+}
+/* input form in contacts*/
+
+.enquiry{
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+  }
+  .enquiry h2{
+	margin: 10px 0 40px;
+	font-size: 62px;
+	padding-right: 5%;
+  }
