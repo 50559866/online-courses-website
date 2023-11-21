@@ -220,6 +220,17 @@ h3{
 .text-box1 p2:hover{
 	cursor: pointer;
 }
+.text-box2{
+	padding: 10px;
+	font-size: 18px;
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
 /* input form in contacts*/
 
 .enquiry{
@@ -242,7 +253,7 @@ h3{
 	font-family: Arial, sans-serif;
 	background-color: #f4f4f4;
 	margin: 0;
-	padding: 10%;
+	padding: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -264,15 +275,24 @@ h3{
 	border-radius: 3px;
   }
   input[type="submit"] {
-	background-color: #007bff;
+	background-color: #e92f2f;
 	color: #fff;
 	cursor: pointer;
   }
 .sign{
-	padding-inline: 15%;
+	padding-inline: 35%;
 	padding-top: 75px;
 	align-items: center;
 }
 .sign h2{
+	font-size: 0;
+}
+.log-sign{
 	color: #fff;
+	cursor: pointer;
+	padding: 8px;
+}
+.log-sign:hover{
+	color: #f44336;
+	transition: 1s;
 }
