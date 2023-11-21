@@ -33,3 +33,55 @@
     <h1>Login Here!</h1>
     <p>Or if your a new user sign up below</p>
 </div>
+
+<div class="sign">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Login/Signup Form</title>
+    </head>
+    <body>
+      <div id="loginSection">
+        <form id="loginForm">
+          <h2>Login</h2>
+          <input type="text" placeholder="Username" name="username" required>
+          <input type="password" placeholder="Password" name="password" required>
+          <input type="submit" value="Login">
+        </form>
+        <p>Don't have an account? <a href="#" id="showSignup">Signup here</a>.</p>
+      </div>
+    
+      <div id="signupSection" style="display: none;">
+        <form id="signupForm">
+          <h2>Signup</h2>
+          <input type="text" placeholder="Username" name="newUsername" required>
+          <input type="password" placeholder="Password" name="newPassword" required>
+          <input type="submit" value="Signup">
+        </form>
+        <p>Already have an account? <a href="#" id="showLogin">Login here</a>.</p>
+      </div>
+    
+      <script>
+        // JavaScript to toggle between login and signup forms
+        const loginSection = document.getElementById('loginSection');
+        const signupSection = document.getElementById('signupSection');
+        const showSignupLink = document.getElementById('showSignup');
+        const showLoginLink = document.getElementById('showLogin');
+    
+        showSignupLink.addEventListener('click', function(event) {
+          event.preventDefault();
+          loginSection.style.display = 'none';
+          signupSection.style.display = 'block';
+        });
+    
+        showLoginLink.addEventListener('click', function(event) {
+          event.preventDefault();
+          loginSection.style.display = 'block';
+          signupSection.style.display = 'none';
+        });
+      </script>
+    </body>
+    </html>
+    
+</div>
