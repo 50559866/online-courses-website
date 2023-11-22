@@ -296,3 +296,36 @@ h3{
 	color: #f44336;
 	transition: 1s;
 }
+.text-box3{
+	width: 40%;
+	color: #fff;
+	position: absolute;
+	top: 58%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	text-align: centre;
+	padding: 10px;
+}
+.text-box3 p{
+	margin: 10px 0 40px;
+    color: #fff;
+	font-size: 18px;
+}
+.text-box3 h1{
+	font-size: 52px;
+}
+.text-box4{
+	width: 34%;
+	color: #fff;
+	position: absolute;
+	top: 58%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding: 15px;
+}
+.text-box4 p{
+	margin: 10px 0 40px;
+    color: #fff;
+	font-size: 18px;
+}
