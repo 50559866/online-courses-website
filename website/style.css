@@ -1,4 +1,4 @@
-s* {
+* {
 	margin: 0;                                                                                    /* is used to create space around elements*/
 	padding: 0;                                                                                   /* is the space between content and its border keeping it a set distance between other elements*/
 	font-family: 'Poppins', sans-serif;                                                           /* add fonts*/
@@ -42,8 +42,7 @@ s* {
 	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/about.png);  /* url shows what image to use rgba(red,green,blue,alpha(opacity))*/
 	background-position: center;
 	background-size: cover;    
-	position: relative; 
-	left:                                                                   /* means it will always fit the whole divison*/	                                                            /* make sure element stays position*/
+	position: relative;                                                             /* means it will always fit the whole divison*/	                                                            /* make sure element stays position*/
 }
 .header4 ul{
 	padding-right: 12.75%;
