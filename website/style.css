@@ -1,4 +1,4 @@
-* {
+s* {
 	margin: 0;                                                                                    /* is used to create space around elements*/
 	padding: 0;                                                                                   /* is the space between content and its border keeping it a set distance between other elements*/
 	font-family: 'Poppins', sans-serif;                                                           /* add fonts*/
@@ -41,8 +41,12 @@
 	width: 100%;
 	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/about.png);  /* url shows what image to use rgba(red,green,blue,alpha(opacity))*/
 	background-position: center;
-	background-size: cover;                                                                       /* means it will always fit the whole divison*/
-	position: relative;                                                                           /* make sure element stays position*/
+	background-size: cover;    
+	position: relative; 
+	left:                                                                   /* means it will always fit the whole divison*/	                                                            /* make sure element stays position*/
+}
+.header4 ul{
+	padding-right: 12.75%;
 }
 
 
@@ -50,7 +54,7 @@ nav{
 	   display: flex;                                                                             /* flexwrap property means elements will go to the next line if there is not enough space*/
 	   padding: 2% 6%;
 	   justify-content: space-between;                                                            /*how browser distributes spacebetween all aviable space is used between first and last items*/
-	   align-items: center;
+	   
 }
 nav img{
 	width:100px;
@@ -300,9 +304,8 @@ h3{
 	width: 40%;
 	color: #fff;
 	position: absolute;
-	top: 58%;
-	left: 25%;
-	transform: translate(-50%, -50%);
+	top: 8%;
+	left: 8%;
 	text-align: centre;
 	overflow: hidden;
 	padding: 20px;
@@ -321,9 +324,8 @@ h3{
 	width: 34%;
 	color: #fff;
 	position: absolute;
-	top: 58%;
-	left: 75%;
-	transform: translate(-50%, -50%);
+	top: 17%;
+	left: 56%;
 	text-align: center;
 	overflow: hidden;
 	padding: 20px; 
